@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía Claudio Coello XIII</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#000000">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Ivory Homes corporate: black blocks + warm ivory pages, Montserrat light, wide-spaced capitals.
+     Layout: one narrow mobile column, black cover and back cover, cream sections between thin rules. */
+  --cream: #F1EBE1;
+  --ink: #16130F;
+  --text: #4A443C;
+  --muted: #857D72;
+  --accent: #A18F6F;
+  --accent-ink: #7A6848;
+  --rule: #D5CCBD;
+  --black: #000000;
+  --on-black: #EEE6DA;
+  --on-black-muted: #B7AB93;
+  --on-black-rule: #3A3631;
+  --logo: url("data:image/png;base64,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");
+  --font: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: var(--font);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.65;
+}
+html:not([data-lang="en"]) body [lang="en"],
+html[data-lang="en"] body [lang="es"] { display: none !important; }
+
+a { color: var(--accent-ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { border-bottom-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+strong { font-weight: 500; color: var(--ink); }
+img { max-width: 100%; display: block; }
+
+.wrap { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+@media (max-width: 360px) { .wrap { padding: 0 18px; } }
+
+/* Top bar */
+.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: var(--black); border-bottom: 1px solid var(--on-black-rule); }
+.bar .wrap { display: flex; align-items: center; justify-content: space-between; height: 52px; }
+.bar a.home { border: 0; display: flex; align-items: center; }
+.bar-spacer { height: 53px; }
+.logo-full { display: block; width: 210px; aspect-ratio: 640 / 266; margin: 0 auto; background: var(--logo) center / contain no-repeat; }
+.logo-mark { display: block; width: 61px; height: 20px; background: var(--logo) left top / 61px auto no-repeat; }
+.lang { display: flex; gap: 4px; }
+.lang button {
+  font: inherit; font-size: 11px; font-weight: 400; letter-spacing: .28em; text-transform: uppercase;
+  background: none; border: 0; color: var(--on-black-muted); padding: 8px 6px 8px 10px; cursor: pointer;
+}
+.lang button[aria-pressed="true"] { color: var(--on-black); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+
+/* Cover */
+.cover { background: var(--black); color: var(--on-black); text-align: center; padding: 56px 0 28px; }
+.cover .line { width: 56px; height: 1px; background: var(--on-black-muted); margin: 36px auto 30px; }
+.cover .eyebrow { color: var(--on-black-muted); }
+.cover h1 {
+  font-weight: 300; font-size: clamp(26px, 7.4vw, 36px); letter-spacing: .14em; line-height: 1.25;
+  text-transform: uppercase; margin: 14px 0 16px; color: var(--on-black); text-wrap: balance;
+}
+.cover p.sub { color: var(--on-black-muted); font-size: 14px; max-width: 30em; margin: 0 auto; }
+.cover .meta {
+  display: flex; justify-content: space-between; gap: 16px; margin-top: 56px; padding-top: 14px;
+  border-top: 1px solid var(--on-black-rule); font-size: 9.5px; letter-spacing: .26em; text-transform: uppercase; color: var(--on-black-muted); text-align: left;
+}
+.cover .meta span:last-child, .foot span:last-child, .back .meta span:last-child { text-align: right; white-space: nowrap; }
+
+/* Type */
+.eyebrow { line-height: 1.5; font-size: 11px; font-weight: 400; letter-spacing: .32em; text-transform: uppercase; color: var(--accent); margin: 0; }
+h2 {
+  font-weight: 300; font-size: clamp(24px, 6.2vw, 30px); letter-spacing: .12em; line-height: 1.22;
+  text-transform: uppercase; color: var(--ink); margin: 10px 0 18px; text-wrap: balance;
+}
+h3 {
+  font-size: 11px; font-weight: 400; letter-spacing: .3em; text-transform: uppercase; color: #6B645A;
+  line-height: 1.5; margin: 32px 0 10px; padding-top: 18px; border-top: 1px solid var(--rule);
+}
+p { margin: 0 0 14px; }
+.lead { font-size: 17px; color: var(--text); }
+.model { font-size: 13px; letter-spacing: .06em; color: var(--muted); margin: -8px 0 18px; }
+.small { font-size: 14px; }
+
+section.s { padding: 56px 0 8px; margin-top: 48px; scroll-margin-top: 56px; }
+#bienvenida { margin-top: 0; }
+
+/* Dark note */
+.dark { background: var(--black); color: var(--on-black); padding: 22px 24px; margin: 22px 0; }
+.dark .eyebrow { color: var(--on-black-muted); margin-bottom: 8px; }
+.dark p { margin: 0; font-size: 15px; }
+.dark p + p { margin-top: 10px; }
+.dark a { color: var(--on-black); border-bottom-color: var(--on-black-muted); }
+
+/* Bullets */
+ul.dots { list-style: none; padding: 0; margin: 18px 0 0; }
+ul.dots li { position: relative; padding-left: 22px; margin: 0 0 12px; font-size: 15px; }
+ul.dots li::before { content: ""; position: absolute; left: 4px; top: .7em; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+
+/* Index */
+.index { display: grid; grid-template-columns: 1fr 1fr; column-gap: 20px; margin-top: 30px; }
+.index a { display: flex; gap: 12px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--rule); border-top: 0; color: var(--ink); }
+.index a:hover { border-bottom-color: var(--accent); }
+.index .n { font-size: 12px; color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: .08em; }
+.index .t { font-size: 11.5px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+
+/* Steps */
+ol.steps { list-style: none; counter-reset: st; padding: 0; margin: 6px 0 16px; }
+ol.steps li { counter-increment: st; display: grid; grid-template-columns: 34px 1fr; padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }
+ol.steps li:first-child { border-top: 1px solid var(--rule); }
+ol.steps li::before { content: counter(st); color: var(--accent); font-size: 15px; font-variant-numeric: tabular-nums; }
+
+/* Contacts */
+.contacts { display: grid; gap: 0; margin-top: 8px; }
+.contact { padding: 20px 0; border-bottom: 1px solid var(--rule); }
+.contact:first-child { border-top: 1px solid var(--rule); }
+.contact .who { font-size: 16px; font-weight: 400; color: var(--ink); margin: 6px 0 2px; }
+.contact .num { font-size: 24px; font-weight: 300; letter-spacing: .04em; color: var(--ink); font-variant-numeric: tabular-nums; margin: 0 0 6px; }
+.contact .num a { color: var(--ink); border: 0; }
+.contact p.small { margin: 0 0 12px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 16px;
+  font: inherit; font-size: 10.5px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase;
+  color: var(--ink); background: transparent; border: 1px solid var(--ink); cursor: pointer;
+}
+.btn:hover { background: var(--ink); color: var(--cream); border-bottom-color: var(--ink); }
+.dark .btn { color: var(--on-black); border-color: var(--on-black-muted); }
+.dark .btn:hover { background: var(--on-black); color: var(--black); }
+dl.hours { margin: 4px 0 14px; display: grid; grid-template-columns: auto 1fr; column-gap: 16px; row-gap: 4px; font-size: 14px; }
+dl.hours dt { color: var(--muted); }
+dl.hours dd { margin: 0; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* Wifi */
+.wifi-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--on-black-rule); }
+.wifi-row:last-of-type { border-bottom: 0; padding-bottom: 4px; }
+.wifi-row > div { min-width: 0; }
+.wifi-row .val { font-family: var(--mono); font-size: 16px; color: var(--on-black); overflow-wrap: anywhere; }
+.wifi-row .btn { padding: 0 12px; flex: none; }
+.wifi-row .eyebrow { margin-bottom: 6px; }
+.copied { font-size: 12px; color: var(--on-black-muted); min-height: 1.2em; margin-top: 10px; }
+
+/* Waste */
+.swatches { display: grid; gap: 10px; margin: 10px 0 4px; }
+.sw { display: flex; align-items: center; gap: 12px; font-size: 15px; }
+.sw i { width: 14px; height: 14px; border-radius: 50%; flex: none; }
+
+/* Equipment */
+.equip { list-style: none; margin: 0; padding: 0; }
+.equip li { padding: 14px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 2px; }
+.equip li:first-child { border-top: 1px solid var(--rule); }
+.equip h3 + .equip, h3 + ul.equip { margin-top: 4px; }
+.equip .name { font-size: 16px; font-weight: 400; color: var(--ink); }
+.equip .mod { font-size: 13px; color: var(--muted); letter-spacing: .02em; }
+.equip .note { font-size: 13.5px; }
+.equip .go { margin-top: 6px; font-size: 10.5px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; justify-self: start; }
+
+/* Hood keys */
+.keys { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 8px; }
+.kg { position: relative; padding-bottom: 20px; }
+.kg:last-child .cap { left: auto; right: 0; }
+.kg .row { display: flex; gap: 5px; }
+.key { width: 30px; height: 30px; border: 1px solid var(--ink); display: grid; place-items: center; font-size: 14px; font-weight: 400; color: var(--ink); }
+.key svg { width: 16px; height: 16px; stroke: var(--ink); fill: none; stroke-width: 1.4; }
+.kg .cap { position: absolute; left: 0; bottom: 0; white-space: nowrap; font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); }
+
+/* Tables */
+.tbl-wrap { overflow-x: auto; margin: 8px 0 16px; }
+table.tbl { width: 100%; border-collapse: collapse; font-size: 15px; }
+table.tbl th { text-align: left; font-size: 10.5px; font-weight: 400; letter-spacing: .26em; text-transform: uppercase; color: var(--muted); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--ink); }
+table.tbl td { padding: 12px 12px 12px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+table.tbl td:first-child { width: 42%; color: var(--ink); font-weight: 400; font-variant-numeric: tabular-nums; }
+.pending {
+  display: inline-block; margin: 4px 0 0; font-size: 9.5px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--accent-ink); border: 1px dashed var(--accent); padding: 2px 8px; white-space: nowrap;
+}
+
+/* Footer + back cover */
+.foot { display: flex; justify-content: space-between; gap: 12px; margin-top: 64px; padding: 14px 0 22px; border-top: 1px solid var(--rule); font-size: 9.5px; letter-spacing: .26em; text-transform: uppercase; color: var(--accent); }
+.back { background: var(--black); color: var(--on-black); text-align: center; padding: 64px 0 28px; }
+.back .logo-full { width: 190px; margin: 0 auto 40px; }
+.back p.q { color: var(--on-black-muted); font-size: 14px; max-width: 26em; margin: 0 auto 30px; }
+.back .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 16px; max-width: 420px; margin: 0 auto; padding-top: 28px; border-top: 1px solid var(--on-black-rule); }
+.back .grid .eyebrow { color: var(--on-black-muted); font-size: 9.5px; margin-bottom: 4px; }
+.back .grid div { font-size: 13px; color: var(--on-black); }
+.back .grid a { color: var(--on-black); border: 0; }
+.back .meta { display: flex; justify-content: space-between; gap: 12px; margin-top: 56px; padding-top: 14px; border-top: 1px solid var(--on-black-rule); font-size: 9.5px; letter-spacing: .26em; text-transform: uppercase; color: var(--on-black-muted); text-align: left; }
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="home" href="#inicio" aria-label="Ivory Homes"><span class="logo-mark" role="img" aria-label="Ivory Homes"></span></a>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" id="btn-es" data-set-lang="es" aria-pressed="true">ES</button>
+      <button type="button" id="btn-en" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+<div class="bar-spacer"></div>
+
+<div class="cover" id="inicio">
+  <div class="wrap">
+    <span class="logo-full" role="img" aria-label="Ivory Homes · The art of homing"></span>
+    <div class="line"></div>
+    <p class="eyebrow"><span lang="es">Guía del apartamento</span><span lang="en">Apartment guide</span></p>
+    <h1>Claudio Coello XIII</h1>
+    <p class="sub"><span lang="es">Contactos, servicios del edificio y uso de cada equipo del apartamento.</span><span lang="en">Contacts, building services and how to use every appliance in the apartment.</span></p>
+    <div class="meta">
+      <span><span lang="es">Apartamento gestionado por Ivory Homes</span><span lang="en">Apartment managed by Ivory Homes</span></span>
+      <span>Madrid · 2026</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section class="s" id="bienvenida">
+    <p class="eyebrow"><span lang="es">Bienvenido</span><span lang="en">Welcome</span></p>
+    <h2><span lang="es">Antes de empezar</span><span lang="en">Before you start</span></h2>
+    <p class="lead"><span lang="es">Aquí tienes lo que necesitas para el día a día en el apartamento: a quién llamar, cómo conectarte a internet, cuándo se recoge la basura y cómo funciona cada equipo.</span><span lang="en">Everything you need day to day in the apartment: who to call, how to get online, when the rubbish is collected and how each appliance works.</span></p>
+
+    <div class="dark">
+      <p class="eyebrow"><span lang="es">Lo más importante</span><span lang="en">Most important</span></p>
+      <p><span lang="es">No desmontes ni intentes reparar ningún aparato. Ante cualquier avería, mensaje de error o duda, avisa a Ivory Homes antes de llamar a un servicio técnico.</span><span lang="en">Don't take apart or try to repair any appliance. If something breaks, shows an error message or you're unsure, contact Ivory Homes before calling any repair service.</span></p>
+    </div>
+
+    <ul class="dots">
+      <li><span lang="es">Lee las indicaciones de seguridad de cada equipo antes de usarlo por primera vez.</span><span lang="en">Read each appliance's safety instructions before using it for the first time.</span></li>
+      <li><span lang="es">Algunos equipos (caldera, termostatos y vinoteca) muestran códigos de error en pantalla. Anota el código o hazle una foto cuando nos comuniques la incidencia.</span><span lang="en">Some appliances (boiler, thermostats and wine cooler) show error codes on screen. Note down the code or take a photo when you report the problem.</span></li>
+    </ul>
+
+    <nav class="index" aria-label="Índice">
+      <a href="#contactos"><span class="n">01</span><span class="t"><span lang="es">Contactos</span><span lang="en">Contacts</span></span></a>
+      <a href="#internet"><span class="n">02</span><span class="t">Internet</span></a>
+      <a href="#basura"><span class="n">03</span><span class="t"><span lang="es">Basura</span><span lang="en">Rubbish</span></span></a>
+      <a href="#equipos"><span class="n">04</span><span class="t"><span lang="es">Equipamiento</span><span lang="en">Appliances</span></span></a>
+      <a href="#campana"><span class="n">05</span><span class="t"><span lang="es">Campana</span><span lang="en">Cooker hood</span></span></a>
+      <a href="#alarma"><span class="n">06</span><span class="t"><span lang="es">Alarma</span><span lang="en">Alarm</span></span></a>
+    </nav>
+  </section>
+
+  <!-- 01 CONTACTOS -->
+  <section class="s" id="contactos">
+    <p class="eyebrow"><span lang="es">01 · A quién llamar</span><span lang="en">01 · Who to call</span></p>
+    <h2><span lang="es">Contactos</span><span lang="en">Contacts</span></h2>
+
+    <div class="contacts">
+      <div class="contact">
+        <p class="eyebrow"><span lang="es">Mantenimiento del apartamento</span><span lang="en">Apartment maintenance</span></p>
+        <p class="who">Mariana Coste · Ivory Homes</p>
+        <p class="num"><a href="tel:+34722817575">+34 722 81 75 75</a></p>
+        <p class="small"><span lang="es">Teléfono y WhatsApp. Averías, incidencias y cualquier duda sobre el apartamento.</span><span lang="en">Phone and WhatsApp. Breakdowns, problems and any questions about the apartment.</span></p>
+        <div class="actions">
+          <a class="btn" href="tel:+34722817575"><span lang="es">Llamar</span><span lang="en">Call</span></a>
+          <a class="btn" href="https://wa.me/34722817575">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <p class="eyebrow"><span lang="es">Conserje</span><span lang="en">Concierge</span></p>
+        <p class="who">Ileana</p>
+        <p class="num"><a href="tel:+34679230977">+34 679 23 09 77</a></p>
+        <dl class="hours">
+          <dt><span lang="es">Lunes a jueves</span><span lang="en">Mon to Thu</span></dt>
+          <dd><span lang="es">9:00–14:00 y 17:00–20:00</span><span lang="en">9:00–14:00 and 17:00–20:00</span></dd>
+          <dt><span lang="es">Viernes</span><span lang="en">Friday</span></dt>
+          <dd><span lang="es">9:00–14:00 y 17:00–19:00</span><span lang="en">9:00–14:00 and 17:00–19:00</span></dd>
+        </dl>
+        <div class="actions">
+          <a class="btn" href="tel:+34679230977"><span lang="es">Llamar</span><span lang="en">Call</span></a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <p class="eyebrow"><span lang="es">Emergencias</span><span lang="en">Emergencies</span></p>
+        <p class="num"><a href="tel:112">112</a></p>
+        <p class="small"><span lang="es">Policía, bomberos y ambulancias.</span><span lang="en">Police, fire brigade and ambulance.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 INTERNET -->
+  <section class="s" id="internet">
+    <p class="eyebrow">02 · Wifi</p>
+    <h2>Internet</h2>
+
+    <div class="dark">
+      <div class="wifi-row" style="padding-top:0">
+        <div>
+          <p class="eyebrow"><span lang="es">Compañía</span><span lang="en">Provider</span></p>
+          <div class="val">DIGI</div>
+        </div>
+      </div>
+      <div class="wifi-row">
+        <div>
+          <p class="eyebrow"><span lang="es">Red wifi</span><span lang="en">Wi-Fi network</span></p>
+          <div class="val" id="wifi-ssid">DIGIFIBRA-PLUS-RbEf</div>
+        </div>
+        <button class="btn" type="button" data-copy="wifi-ssid"><span lang="es">Copiar</span><span lang="en">Copy</span></button>
+      </div>
+      <div class="wifi-row">
+        <div>
+          <p class="eyebrow"><span lang="es">Contraseña</span><span lang="en">Password</span></p>
+          <p><span lang="es">En la tarjeta impresa del apartamento, junto al código QR.</span><span lang="en">On the printed card in the apartment, next to the QR code.</span></p>
+        </div>
+      </div>
+      <p class="copied" id="copy-msg" aria-live="polite"></p>
+    </div>
+    <p class="small"><span lang="es">Por seguridad, la contraseña no aparece en esta guía online. Si no encuentras la tarjeta, pídela a Ivory Homes por WhatsApp. Distingue mayúsculas y minúsculas e incluye símbolos.</span><span lang="en">For security, the password is not shown in this online guide. If you can't find the card, ask Ivory Homes on WhatsApp. It is case-sensitive and includes symbols.</span></p>
+  </section>
+
+  <!-- 03 BASURA -->
+  <section class="s" id="basura">
+    <p class="eyebrow"><span lang="es">03 · Residuos</span><span lang="en">03 · Waste</span></p>
+    <h2><span lang="es">Basura y reciclaje</span><span lang="en">Rubbish and recycling</span></h2>
+
+    <h3><span lang="es">De lunes a viernes</span><span lang="en">Monday to Friday</span></h3>
+    <p><span lang="es">Deja la bolsa en la puerta del piso. Se recoge de <strong>lunes a jueves a las 19:00</strong> y los <strong>viernes a las 18:30</strong>.</span><span lang="en">Leave the bag outside the apartment door. It's collected <strong>Monday to Thursday at 19:00</strong> and on <strong>Fridays at 18:30</strong>.</span></p>
+
+    <h3><span lang="es">Fines de semana y festivos</span><span lang="en">Weekends and public holidays</span></h3>
+    <p><span lang="es">No hay recogida en la puerta. Baja la basura a los cubos del cuarto de basura, abajo en la escalera.</span><span lang="en">There's no collection at the door. Take your rubbish down to the bins in the rubbish room at the bottom of the stairs.</span></p>
+
+    <h3><span lang="es">Cartón y vidrio</span><span lang="en">Cardboard and glass</span></h3>
+    <p><span lang="es">Llévalos siempre a los contenedores grandes de la calle.</span><span lang="en">Always take them to the large containers in the street.</span></p>
+    <div class="swatches">
+      <div class="sw"><i style="background:#2F69B3"></i><span><strong><span lang="es">Azul</span><span lang="en">Blue</span></strong> · <span lang="es">papel y cartón</span><span lang="en">paper and cardboard</span></span></div>
+      <div class="sw"><i style="background:#3C8A57"></i><span><strong><span lang="es">Verde</span><span lang="en">Green</span></strong> · <span lang="es">botellas y frascos de vidrio</span><span lang="en">glass bottles and jars</span></span></div>
+    </div>
+  </section>
+
+</div>
+<div class="wrap">
+  <!-- 04 EQUIPAMIENTO -->
+  <section class="s" id="equipos">
+    <p class="eyebrow"><span lang="es">04 · Manuales</span><span lang="en">04 · Manuals</span></p>
+    <h2><span lang="es">Equipamiento</span><span lang="en">Appliances</span></h2>
+    <p class="lead"><span lang="es">Marca y modelo de cada equipo, con el enlace al manual oficial del fabricante.</span><span lang="en">Brand and model of each appliance, with a link to the manufacturer's official manual.</span></p>
+
+    <h3><span lang="es">Cocina</span><span lang="en">Kitchen</span></h3>
+    <ul class="equip">
+      <li>
+        <span class="name"><span lang="es">Placa de inducción</span><span lang="en">Induction hob</span></span>
+        <span class="mod"><span lang="es">Miele · serie KM 73xx (manual M.-Nr. 12 428 080)</span><span lang="en">Miele · KM 73xx series (manual M.-Nr. 12 428 080)</span></span>
+        <a class="go" href="https://media.miele.com/downloads/da/ab/01_C7F13838DFE01EDE97A2D30B9AABDAAB.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Horno multifunción</span><span lang="en">Multifunction oven</span></span>
+        <span class="mod">Miele H 2467 BP ACTIVE · M.No 12691580</span>
+        <a class="go" href="https://media.miele.com/downloads/08/85/00_C7F13838CD161FD0A9B76D624E690885.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Microondas</span><span lang="en">Microwave</span></span>
+        <span class="mod">Miele M 2230 SC</span>
+        <a class="go" href="https://media.miele.com/downloads/18/20/03_C7F1383899F41FD0A3F4884779091820.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Frigorífico</span><span lang="en">Fridge</span></span>
+        <span class="mod">Miele K 7737 D</span>
+        <a class="go" href="https://media.miele.com/downloads/f8/08/01_7CED8D23BC481FE19EEA68D2D5A0F808.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Congelador</span><span lang="en">Freezer</span></span>
+        <span class="mod">Miele FNUS 7040 D</span>
+        <a class="go" href="https://media.miele.com/downloads/08/f5/03_7CED8D2439161FE1AFC5192AB62408F5.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Lavavajillas</span><span lang="en">Dishwasher</span></span>
+        <span class="mod">Miele G 5651 SCVi Active · M.No 12858310</span>
+        <a class="go" href="https://media.miele.com/downloads/44/7a/02_C7F128281A6E1FE0B5B2F3F8B882447A.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Vinoteca</span><span lang="en">Wine cooler</span></span>
+        <span class="mod"><span lang="es">Liebherr UWgb 3632 Vinidor · N.º de servicio 9948222-04</span><span lang="en">Liebherr UWgb 3632 Vinidor · Service no. 9948222-04</span></span>
+        <span class="note"><span lang="es">En la web de Liebherr, introduce el n.º de servicio 9948222-04.</span><span lang="en">On the Liebherr website, enter service number 9948222-04.</span></span>
+        <a class="go" href="https://home.liebherr.com/fridge-manuals"><span lang="es">Buscador de manuales ↗</span><span lang="en">Manual finder ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Campana extractora</span><span lang="en">Cooker hood</span></span>
+        <span class="mod">Miele DA 2390</span>
+        <a class="go" href="#campana"><span lang="es">Guía rápida ↓</span><span lang="en">Quick guide ↓</span></a>
+      </li>
+    </ul>
+
+    <h3><span lang="es">Lavado y secado</span><span lang="en">Laundry</span></h3>
+    <ul class="equip">
+      <li>
+        <span class="name"><span lang="es">Lavadora</span><span lang="en">Washing machine</span></span>
+        <span class="mod">Miele W1 WWA120 WCS 8 kg Active · M.No 12722930</span>
+        <a class="go" href="https://media.miele.com/downloads/89/5e/01_C7F128286FC01FE090D3FC541EEE895E.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Secadora</span><span lang="en">Tumble dryer</span></span>
+        <span class="mod">Miele T1 TWC640WP EcoSpeed 8 kg</span>
+        <a class="go" href="https://media.miele.com/downloads/5e/64/01_C7F128287B371EDFBBA2B4EA6F825E64.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+    </ul>
+
+    <h3><span lang="es">Climatización y agua caliente</span><span lang="en">Heating, cooling and hot water</span></h3>
+    <ul class="equip">
+      <li>
+        <span class="name"><span lang="es">Caldera</span><span lang="en">Boiler</span></span>
+        <span class="mod">Saunier Duval IsoMax MiConnect (IsoMax Condens T 35-CS/1)</span>
+        <span class="note"><span lang="es">Servicio Técnico Oficial Saunier Duval: 910 77 99 11.</span><span lang="en">Saunier Duval official technical service: 910 77 99 11.</span></span>
+        <a class="go" href="https://www.saunierduval.es/downloads/isomax-mi-connect/sd-isomax-miconnect-x-mu-0020294209-02-220802-2452213.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Termostato de aire acondicionado</span><span lang="en">Air conditioning thermostat</span></span>
+        <span class="mod">Daikin Madoka BRC1H52W</span>
+        <span class="note"><span lang="es">Funciones avanzadas desde la app Madoka Assistant.</span><span lang="en">Advanced functions via the Madoka Assistant app.</span></span>
+        <a class="go" href="https://qr.daikin.eu/?N=BRC1H52W"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Termostato de zonas</span><span lang="en">Zone thermostat</span></span>
+        <span class="mod">Airzone Blueface Zero (AZCE6BLUEZEROC)</span>
+        <a class="go" href="https://www.airzonecontrol.com/en/en/support/technical-details/airzone-blueface-zero-color-thermostat-wired-8z-ce6/"><span lang="es">Ficha del fabricante ↗</span><span lang="en">Manufacturer page ↗</span></a>
+      </li>
+    </ul>
+
+    <h3><span lang="es">Salón y dormitorios</span><span lang="en">Living room and bedrooms</span></h3>
+    <ul class="equip">
+      <li>
+        <span class="name"><span lang="es">Televisor</span><span lang="en">TV</span></span>
+        <span class="mod">LG QNED</span>
+        <span class="note"><span lang="es">Guía completa integrada en la TV: Ajustes &gt; Soporte &gt; Guía del usuario.</span><span lang="en">Full guide built into the TV: Settings &gt; Support &gt; User Guide.</span></span>
+        <a class="go" href="https://www.lg.com/es/soporte"><span lang="es">Soporte LG ↗</span><span lang="en">LG support ↗</span></a>
+      </li>
+      <li>
+        <span class="name"><span lang="es">Mando de persianas y estores</span><span lang="en">Blinds remote control</span></span>
+        <span class="mod">Somfy Situo 1 io</span>
+        <span class="note"><span lang="es">Manual multilingüe (FR/EN/IT/ES/PT).</span><span lang="en">Multilingual manual (FR/EN/IT/ES/PT).</span></span>
+        <a class="go" href="https://asset.somfy.com/Document/e1ed988b-9471-4951-b0b4-3697c91c5f11_5144839A_Situo_1_et_5_io_%28FR-EN-IT-ES-PT%29.pdf"><span lang="es">Manual oficial ↗</span><span lang="en">Official manual ↗</span></a>
+      </li>
+    </ul>
+
+    <h3><span lang="es">Seguridad</span><span lang="en">Security</span></h3>
+    <ul class="equip">
+      <li>
+        <span class="name"><span lang="es">Alarma</span><span lang="en">Alarm</span></span>
+        <span class="mod">Movistar Prosegur Alarmas</span>
+        <a class="go" href="#alarma"><span lang="es">Guía rápida ↓</span><span lang="en">Quick guide ↓</span></a>
+      </li>
+    </ul>
+  </section>
+
+</div>
+<div class="wrap">
+  <!-- 05 CAMPANA -->
+  <section class="s" id="campana">
+    <p class="eyebrow"><span lang="es">05 · Guía rápida</span><span lang="en">05 · Quick guide</span></p>
+    <h2><span lang="es">Campana extractora</span><span lang="en">Cooker hood</span></h2>
+    <p class="model">Miele DA 2390</p>
+    <p><span lang="es">La campana está integrada en el mueble alto, encima de la placa. Los botones están en el borde delantero, en la parte de abajo. De izquierda a derecha:</span><span lang="en">The cooker hood is built into the wall cabinet above the hob. The buttons are on the underside of the front edge. From left to right:</span></p>
+
+    <div class="keys" aria-hidden="true">
+      <div class="kg">
+        <div class="row"><span class="key"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span></div>
+        <span class="cap"><span lang="es">Luz</span><span lang="en">Light</span></span>
+      </div>
+      <div class="kg">
+        <div class="row"><span class="key">–</span><span class="key">1</span><span class="key">2</span><span class="key">3</span><span class="key">B</span><span class="key">+</span></div>
+        <span class="cap"><span lang="es">Potencias</span><span lang="en">Power levels</span></span>
+      </div>
+      <div class="kg">
+        <div class="row"><span class="key"><svg viewBox="0 0 24 24"><path d="M12 3v8M7.1 6.6a7 7 0 1 0 9.8 0"/></svg></span></div>
+        <span class="cap"><span lang="es">Encendido</span><span lang="en">On / off</span></span>
+      </div>
+    </div>
+
+    <h3><span lang="es">Uso diario</span><span lang="en">Everyday use</span></h3>
+    <ol class="steps">
+      <li><span><span lang="es">Enciende la campana en cuanto empieces a cocinar, con el botón de encendido.</span><span lang="en">Switch the hood on as soon as you start cooking, using the on/off button.</span></span></li>
+      <li><span><span lang="es">Elige la potencia con <strong>1</strong>, <strong>2</strong> o <strong>3</strong>, o súbela y bájala con <strong>+</strong> y <strong>–</strong>.</span><span lang="en">Choose a power level with <strong>1</strong>, <strong>2</strong> or <strong>3</strong>, or adjust it with <strong>+</strong> and <strong>–</strong>.</span></span></li>
+      <li><span><span lang="es">Para mucho vapor o humo, usa <strong>B</strong> (intensivo). A los 5 minutos baja sola al nivel 3.</span><span lang="en">For heavy steam or smoke, use <strong>B</strong> (booster). After 5 minutes it drops back to level 3 automatically.</span></span></li>
+      <li><span><span lang="es">La luz se enciende y se apaga con el botón de la bombilla.</span><span lang="en">Turn the light on and off with the light bulb button.</span></span></li>
+      <li><span><span lang="es">Al terminar de cocinar, déjala funcionando unos minutos más para eliminar olores. Después apágala con el botón de encendido.</span><span lang="en">When you finish cooking, leave the fan running for a few more minutes to clear odours. Then switch it off with the on/off button.</span></span></li>
+    </ol>
+    <p class="small"><span lang="es">Si se te olvida apagarla, la campana va bajando de potencia sola a partir de las 2 horas hasta que se apaga.</span><span lang="en">If you forget to switch it off, the hood gradually lowers its power after 2 hours until it turns off.</span></p>
+
+    <h3><span lang="es">Limpieza de los filtros</span><span lang="en">Cleaning the filters</span></h3>
+    <p><span lang="es">Los dos filtros metálicos de grasa se lavan en el lavavajillas. Lávalos <strong>cada 3 o 4 semanas</strong>, o antes si cocinas mucho con aceite.</span><span lang="en">The two metal grease filters are dishwasher-safe. Clean them <strong>every 3 to 4 weeks</strong>, or more often if you cook a lot with oil.</span></p>
+    <ol class="steps">
+      <li><span><span lang="es">Apaga la campana y la luz, y espera a que se enfríen.</span><span lang="en">Switch off the fan and the light, and let them cool down.</span></span></li>
+      <li><span><span lang="es">Tira del asa de cada filtro hacia abajo para sacarlo. Sujétalo con la otra mano para que no caiga.</span><span lang="en">Pull each filter's handle downwards to remove it. Hold it with your other hand so it doesn't fall.</span></span></li>
+      <li><span><span lang="es">Lávalo en el lavavajillas, en posición vertical, o a mano con agua caliente y jabón.</span><span lang="en">Wash it upright in the dishwasher, or by hand in hot soapy water.</span></span></li>
+      <li><span><span lang="es">Deja que se seque bien y vuelve a colocarlo con el asa hacia fuera.</span><span lang="en">Let it dry completely and put it back with the handle facing out.</span></span></li>
+    </ol>
+    <p class="small"><span lang="es">Limpia el exterior con un paño húmedo y un poco de jabón suave. No uses estropajos ni productos abrasivos.</span><span lang="en">Wipe the outside with a damp cloth and a little mild soap. Don't use scourers or abrasive cleaners.</span></p>
+
+    <div class="dark">
+      <p class="eyebrow"><span lang="es">Incidencias</span><span lang="en">Problems</span></p>
+      <p><span lang="es">Si la campana no funciona, hace ruidos raros o se funde una luz, no la desmontes. Avisa a Ivory Homes por teléfono o WhatsApp: <a href="tel:+34722817575">+34 722 81 75 75</a>.</span><span lang="en">If the hood stops working, makes unusual noises or a light goes out, don't take it apart. Contact Ivory Homes by phone or WhatsApp: <a href="tel:+34722817575">+34 722 81 75 75</a>.</span></p>
+    </div>
+  </section>
+
+  <!-- 06 ALARMA -->
+  <section class="s" id="alarma">
+    <p class="eyebrow"><span lang="es">06 · Guía rápida</span><span lang="en">06 · Quick guide</span></p>
+    <h2><span lang="es">Alarma</span><span lang="en">Alarm</span></h2>
+    <p class="model">Movistar Prosegur Alarmas</p>
+    <p><span lang="es">La alarma se maneja desde el teclado blanco situado junto a la entrada. Puedes usar tu código de 4 cifras o acercar la llave inteligente al símbolo ((•)) de la parte inferior del teclado.</span><span lang="en">The alarm is controlled from the white keypad next to the entrance. Use your 4-digit code or hold the smart key fob against the ((•)) symbol at the bottom of the keypad.</span></p>
+
+    <div class="dark">
+      <p class="eyebrow"><span lang="es">Tu código</span><span lang="en">Your code</span></p>
+      <p><span lang="es">Ivory Homes te facilita tu código personal de 4 cifras por separado. No lo compartas ni dejes la llave a la vista.</span><span lang="en">Ivory Homes gives you your personal 4-digit code separately. Don't share it or leave the key fob in sight.</span></p>
+    </div>
+
+    <h3><span lang="es">Conectar la alarma al salir</span><span lang="en">Arming the alarm when you leave</span></h3>
+    <ol class="steps">
+      <li><span><span lang="es">Comprueba que puertas y ventanas están cerradas y que no queda nadie dentro.</span><span lang="en">Check that doors and windows are closed and nobody is left inside.</span></span></li>
+      <li><span><span lang="es">Pulsa la tecla de <strong>conexión total</strong> (escudo con ✓, arriba a la izquierda).</span><span lang="en">Press the <strong>full arm</strong> key (shield with ✓, top left).</span></span></li>
+      <li><span><span lang="es">Marca tu código de 4 cifras o acerca la llave inteligente al símbolo ((•)).</span><span lang="en">Enter your 4-digit code or hold the key fob against the ((•)) symbol.</span></span></li>
+      <li><span><span lang="es">El teclado pitará durante unos segundos: sal y cierra la puerta antes de que termine.</span><span lang="en">The keypad will beep for a few seconds: leave and close the door before it stops.</span></span></li>
+    </ol>
+    <p class="small"><span lang="es">Si te quedas en casa (por ejemplo, de noche), usa la <strong>conexión parcial</strong> (escudo con figura, arriba a la derecha) en lugar de la total.</span><span lang="en">If you are staying in (for example, at night), use <strong>partial arming</strong> (shield with figure, top right) instead.</span></p>
+
+    <h3><span lang="es">Desconectar la alarma al entrar</span><span lang="en">Disarming the alarm when you arrive</span></h3>
+    <ol class="steps">
+      <li><span><span lang="es">Al abrir la puerta, el teclado empezará a pitar: tienes unos segundos para desconectarla.</span><span lang="en">When you open the door, the keypad starts beeping: you have a few seconds to disarm it.</span></span></li>
+      <li><span><span lang="es">Marca tu código de 4 cifras o acerca la llave inteligente al símbolo ((•)). Si hace falta, pulsa antes la tecla de desconexión (escudo, abajo a la izquierda).</span><span lang="en">Enter your code or hold the key fob against the ((•)) symbol. If needed, press the disarm key first (shield, bottom left).</span></span></li>
+      <li><span><span lang="es">El teclado deja de pitar: la alarma está desconectada.</span><span lang="en">The beeping stops: the alarm is disarmed.</span></span></li>
+    </ol>
+
+    <h3><span lang="es">Si la alarma salta por error</span><span lang="en">If the alarm goes off by mistake</span></h3>
+    <ol class="steps">
+      <li><span><span lang="es">Desconéctala enseguida con tu código o la llave inteligente.</span><span lang="en">Disarm it straight away with your code or key fob.</span></span></li>
+      <li><span><span lang="es">La Central Receptora de Alarmas puede llamar para comprobar que todo está bien. Atiende la llamada y explica que ha sido un error.</span><span lang="en">The Alarm Receiving Centre may call to check everything is fine. Answer and explain it was a mistake.</span></span></li>
+      <li><span><span lang="es">Avisa a Ivory Homes por teléfono o WhatsApp: +34 722 81 75 75.</span><span lang="en">Let Ivory Homes know by phone or WhatsApp: +34 722 81 75 75.</span></span></li>
+    </ol>
+    <p class="small"><span lang="es">Para evitar falsas alarmas, no dejes ventanas abiertas ni nada que se mueva con corrientes de aire (cortinas, globos) delante de los detectores.</span><span lang="en">To avoid false alarms, don't leave windows open or anything that moves in a draught (curtains, balloons) in front of the sensors.</span></p>
+
+    <h3><span lang="es">Emergencias</span><span lang="en">Emergencies</span></h3>
+    <p><span lang="es">El teclado puede enviar avisos a la Central Receptora de Alarmas aunque la alarma esté desconectada. Úsalos solo en una emergencia real.</span><span lang="en">The keypad can send alerts to the Alarm Receiving Centre even when the alarm is disarmed. Use them only in a real emergency.</span></p>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th><span lang="es">Teclas</span><span lang="en">Keys</span></th><th><span lang="es">Aviso</span><span lang="en">Alert</span></th></tr></thead>
+        <tbody>
+          <tr><td><span lang="es">SOS (mantener pulsada)</span><span lang="en">SOS (press and hold)</span></td><td><span lang="es">Emergencia general</span><span lang="en">General emergency</span></td></tr>
+          <tr><td><span lang="es">1 + 3 a la vez</span><span lang="en">1 + 3 together</span></td><td><span lang="es">Ver icono en la pegatina del teclado</span><span lang="en">See the icon on the keypad sticker</span><br><span class="pending"><span lang="es">Por confirmar</span><span lang="en">To be confirmed</span></span></td></tr>
+          <tr><td><span lang="es">4 + 6 a la vez</span><span lang="en">4 + 6 together</span></td><td><span lang="es">Ver icono en la pegatina del teclado</span><span lang="en">See the icon on the keypad sticker</span><br><span class="pending"><span lang="es">Por confirmar</span><span lang="en">To be confirmed</span></span></td></tr>
+          <tr><td><span lang="es">7 + 9 a la vez</span><span lang="en">7 + 9 together</span></td><td><span lang="es">Ver icono en la pegatina del teclado</span><span lang="en">See the icon on the keypad sticker</span><br><span class="pending"><span lang="es">Por confirmar</span><span lang="en">To be confirmed</span></span></td></tr>
+          <tr><td>*</td><td><span lang="es">Ver icono en la pegatina del teclado</span><span lang="en">See the icon on the keypad sticker</span><br><span class="pending"><span lang="es">Por confirmar</span><span lang="en">To be confirmed</span></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="dark">
+      <p class="eyebrow"><span lang="es">Peligro inmediato</span><span lang="en">Immediate danger</span></p>
+      <p><span lang="es">En caso de peligro inmediato, llama siempre al <a href="tel:112">112</a>.</span><span lang="en">In case of immediate danger, always call <a href="tel:112">112</a>.</span></p>
+    </div>
+
+    <h3><span lang="es">Contactos de la alarma</span><span lang="en">Alarm contacts</span></h3>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th><span lang="es">Contacto</span><span lang="en">Contact</span></th><th><span lang="es">Para</span><span lang="en">For</span></th></tr></thead>
+        <tbody>
+          <tr><td><a href="tel:112">112</a></td><td><span lang="es">Emergencias</span><span lang="en">Emergencies</span></td></tr>
+          <tr><td><a href="tel:+34722817575">722 81 75 75</a></td><td>Ivory Homes</td></tr>
+          <tr><td><a href="tel:900112365">900 112 365</a></td><td><span lang="es">Movistar Prosegur Alarmas, atención al cliente (gratuito)</span><span lang="en">Movistar Prosegur Alarmas customer service (free)</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small"><span lang="es">El código QR del teclado («Resuelve tus dudas») lleva a la ayuda oficial del fabricante.</span><span lang="en">The QR code on the keypad ("Resuelve tus dudas") links to the manufacturer's official help.</span></p>
+  </section>
+
+  <div class="foot">
+    <span>Ivory Homes · The art of homing</span>
+    <span><span lang="es">Actualizada · nov 2026</span><span lang="en">Updated · Nov 2026</span></span>
+  </div>
+</div>
+
+<footer class="back">
+  <div class="wrap">
+    <span class="logo-full" role="img" aria-label="Ivory Homes · The art of homing"></span>
+    <p class="q"><span lang="es">¿Alguna duda o incidencia en el apartamento? Escríbenos o llámanos al <a href="tel:+34722817575">+34 722 81 75 75</a> y lo resolvemos contigo.</span><span lang="en">Any questions or problems in the apartment? Message or call us on <a href="tel:+34722817575">+34 722 81 75 75</a> and we'll sort it out with you.</span></p>
+    <div class="grid">
+      <div><p class="eyebrow">Web</p><a href="https://www.ivoryhomes.es">www.ivoryhomes.es</a></div>
+      <div><p class="eyebrow">Email</p><a href="mailto:info@ivoryhomes.es">info@ivoryhomes.es</a></div>
+      <div><p class="eyebrow"><span lang="es">Teléfono</span><span lang="en">Phone</span></p><a href="tel:+34915645553">+34 91 564 55 53</a></div>
+      <div><p class="eyebrow"><span lang="es">Dirección</span><span lang="en">Address</span></p>C/ General Oraá 82, Madrid</div>
+    </div>
+    <div class="meta">
+      <span><span lang="es">Guía del apartamento</span><span lang="en">Apartment guide</span></span>
+      <span>Claudio Coello XIII</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function () {
+  var root = document.documentElement;
+  var btns = document.querySelectorAll('[data-set-lang]');
+  function setLang(l) {
+    root.setAttribute('data-lang', l);
+    root.setAttribute('lang', l);
+    document.title = l === 'en' ? 'Claudio Coello XIII guide' : 'Guía Claudio Coello XIII';
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-set-lang') === l ? 'true' : 'false');
+    }
+    try { localStorage.setItem('ivory-guide-lang', l); } catch (e) {}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('ivory-guide-lang'); } catch (e) {}
+  var nav = (navigator.language || 'es').toLowerCase();
+  setLang(saved === 'es' || saved === 'en' ? saved : (nav.indexOf('es') === 0 ? 'es' : 'en'));
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () { setLang(this.getAttribute('data-set-lang')); });
+  }
+
+  var msg = document.getElementById('copy-msg');
+  function say(es, en) { msg.textContent = root.getAttribute('data-lang') === 'en' ? en : es; }
+  function selectText(el) {
+    try { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); } catch (e) {}
+  }
+  var copyBtns = document.querySelectorAll('[data-copy]');
+  for (var j = 0; j < copyBtns.length; j++) {
+    copyBtns[j].addEventListener('click', function () {
+      var el = document.getElementById(this.getAttribute('data-copy'));
+      var text = el.textContent;
+      var fail = function () { selectText(el); say('Texto seleccionado: mantén pulsado para copiarlo.', 'Text selected: press and hold to copy it.'); };
+      try {
+        navigator.clipboard.writeText(text).then(function () { say('Copiado.', 'Copied.'); }, fail);
+      } catch (e) { fail(); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
